@@ -19,3 +19,13 @@
 // Output:
 // 2.167
 
+
+ let N = 3
+let sum = 0
+let preSum = 0
+for(let i = 1; i<=N; i++){
+   preSum = preSum+i // 1, 1+2 , 1+2+3
+   sum = sum+ i/preSum // 1/1 +  2/3 ,  3/6
+}
+
+console.log(sum.toFixed(3))
